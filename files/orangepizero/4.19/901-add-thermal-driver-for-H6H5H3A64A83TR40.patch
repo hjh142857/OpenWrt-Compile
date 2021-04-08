@@ -391,7 +391,7 @@ index 000000000000..23a5f4aa4be4
 +	void __iomem *base;
 +	int ret;
 +
-+	base = devm_platform_ioremap_resource(pdev, 0);
++	base = devm_ioremap_resource(pdev, 0);
 +	if (IS_ERR(base))
 +		return PTR_ERR(base);
 +
