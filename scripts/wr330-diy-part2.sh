@@ -60,4 +60,4 @@ sed -i '/asiarf,ap7621-001/i\\t\tucidef_add_switch "switch0" \\' target/linux/ra
 sed -i '/asiarf,ap7621-001/i\\t\t\t"0:wan" "1:lan:1" "2:lan:2" "3:lan:3" "4:lan:4" "6@eth0"' target/linux/ramips/mt7621/base-files/etc/board.d/02_network
 sed -i '/asiarf,ap7621-001/i\\t\t;;' target/linux/ramips/mt7621/base-files/etc/board.d/02_network
 sed -i '/newifi-d2/i\\tyouhua,wr1200js|\\' target/linux/ramips/mt7621/base-files/etc/board.d/02_network
-curl https://raw.githubusercontent.com/hjh142857/OpenWrt-Compile/main/mt7621_youhua_wr1200js.dts > target/linux/ramips/dts/mt7621_youhua_wr1200js.dts
+curl https://raw.githubusercontent.com/hjh142857/OpenWrt-Compile/main/files/wr330/mt7621_youhua_wr1200js.dts > target/linux/ramips/dts/mt7621_youhua_wr1200js.dts
