@@ -26,6 +26,7 @@ env:
   CONFIG_FILE: config/rpi4.config
   DIY_P1_SH: scripts/rpi4-diy-part1.sh
   DIY_P2_SH: scripts/rpi4-diy-part2.sh
+  FILES_PATH: files/rpi4/files
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
@@ -73,7 +74,7 @@ jobs:
 
     - name: Load custom configuration
       run: |
-        [ -e files ] && mv files openwrt/files
+        [ -e $FILES_PATH ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
         chmod +x $DIY_P2_SH
         cd openwrt
